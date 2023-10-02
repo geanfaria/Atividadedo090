@@ -1,0 +1,57 @@
+body{ 
+    background: black;
+  
+}
+.livro{ 
+position: absolute;
+width: 300px ;
+margin: 05%;
+left: 250px;
+top: 210px;
+padding: 2px;
+
+}
+.capa{ 
+    position: absolute;
+width: 360px ;
+margin: 05%;
+left: 560px;
+top: 210px;
+padding: 2px;
+
+}
+
+.livroo{ 
+    position: absolute;
+ width: 315px ;
+ margin: 05%;
+ left: 930px;
+top: 210px;
+padding: 2px;
+
+} 
+
+.bruxas{ 
+    position: absolute;
+    width: 315px ;
+    margin: 05%;
+    left: 1250px;
+   top: 210px;
+   padding: 2px;
+
+
+}
+p{  
+color: white;
+
+}
+h1{ 
+color: white;
+
+
+}
+.p1{ 
+ position: absolute;
+
+
+}

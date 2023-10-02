@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Livraria Online</title>
+    <link rel="stylesheet" type="text/css" href="livro.css">
+</head>
+<body>
+    <center><h1>Bem-vindo à Livraria Online</h1></center>
+    <center> <p>Insira o valor total da sua compra:</p> </center>
+    <center> <input type="number" id="valorCompra" placeholder="Insira o valor em R$"></center>
+    <center><button onclick="calcularDesconto()">Calcular Desconto</button></center>
+    <center> <p>Desconto aplicado: <span id="desconto"></span></p> </center>
+
+    <script>
+        function calcularDesconto() {   
+            const valorCompra = parseFloat(document.getElementById('valorCompra').value);
+
+            let desconto = 0;
+
+            if (valorCompra > 200) {
+                desconto = 0.2; // 20%
+            } else if (valorCompra > 100) {
+                desconto = 0.1; // 10%
+            }
+            else if(valorCompra<=100){
+                desconto=0.05;
+
+            }
+           
+            
+            const valorDesconto = valorCompra * desconto;
+            document.getElementById('desconto').textContent = `R$ ${valorDesconto.toFixed(2)}`;
+        }
+    </script>
+      <p1> R$ 50,00 </p1> 
+  <div>                                  
+    <img src="bolas.jpg" class="livro" > 
+        
+  </div> 
+
+      <div>  <img src="livr.jpg" class="capa" >  </div>
+      <div> <img src="bruxas.jpg" class="bruxas" > </div>
+       <div>  <img src="ulha.jpg" class="livroo" > </div>
+      
+       
+</body>
+</html>
